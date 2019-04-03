@@ -25,14 +25,12 @@ var map = new ol.Map({
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-         maxZoom: 10, minZoom: 1
+         maxZoom: 28, minZoom: 1
     })
 });
 
-var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
-map.addControl(layerSwitcher);
 
-map.getView().fit([-19716408.481768, -7956086.740746, 20867125.590752, 19787083.272763], map.getSize());
+map.getView().fit([-19063268.109122, -18500060.426294, 20025834.507616, 28230957.654790], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
